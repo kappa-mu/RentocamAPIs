@@ -42,7 +42,7 @@ void CreateInitialDatabase()
         context.Database.EnsureCreated();
 
         var nikonD90 = new CameraDetails { Id = Guid.NewGuid(), Color = "Black", Manufacturer = "Nikon", ModelName = "D90", Weight = "700 gm", YearOfManufacture = 2007 };
-        var nikonD5100 = new CameraDetails { Id = Guid.NewGuid(), Color = "Black", Manufacturer = "Nikon", ModelName = "D5100", Weight = "550 gm", YearOfManufacture = 2011 };
+        var nikonD5100 = new CameraDetails { Id = Guid.NewGuid(), Color = "Black", Manufacturer = "Nikon", ModelName = "D5100", Weight = "550 gm", YearOfManufacture = 2010 };
 
         var cameraDetailsRepository = new CameraDetailsRepository(context);
         cameraDetailsRepository.Add(nikonD90);
